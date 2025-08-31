@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan José Portfólio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bryan José</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#sobremim">Sobre mim</a></li>
+                <li> <a href="#formacao">Formação</a></li>
+                <li> <a href="#portifolio">Portfólio</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Bryan José</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#sobremim" onclick="toggleMenu()">Sobre mim</a></li>
+                <li> <a href="#formacao" onclick="toggleMenu()">Formação</a></li>
+                <li> <a href="#portifolio" onclick="toggleMenu()">Portifólio</a></li>
+                <li> <a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Bryan José profile picture">     
+        </div>
+        <div class="section__text"> 
+            <p class="section__text__p1">Olá, eu sou</p>
+            <h1 class="title">Bryan José</h1>
+            <p class="section__text__p2">Desenvolvedor Fullstack </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')" >
+                Download CV 
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contato'" >
+                Informações para Contato
+                </button>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" 
+                    alt="Meu linkedin"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/bryansiim/'"
+                    />
+                    <img src="./assets/github.png" 
+                    alt="Meu GitHub"
+                    class="icon" 
+                    onclick="location.href='https://github.com/bryansiim'"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobremim"> 
+        <p class="section__text__p1"> Saiba mais</p>
+        <h1 class="title"> Sobre mim</h1>
+        <div class="section-container"> 
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container"> 
+                <div class="about-containers"> 
+                    <div class="details-container"> 
+                        <img 
+                        src="./assets/engrenagem-icone.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />  
+                        <h3> Hard Skills</h3>
+                        <p>C#, .NET, Git, GitHub, Html, Css, Javascript <br />(Foco em desenvolvimento Backend)</p>
+                    </div>
+                    <div class="details-container"> 
+                        <img 
+                        src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                        />  
+                        <h3> Soft Skills</h3>
+                        <p>Comunicação, Proatividade, Aprendizado rápido... <br />Inglês nível intermediário</p>
+                    </div>
+                </div>
+                <div class="text-container"> 
+                    <p> Meu nome é Bryan José, sou estudante de Engenharia de Software e entusiasta por tecnologia. Meu objetivo é me tornar desenvolvedor fullstack (com ênfase em backend). Atualmente estou aprendendo C#, .NET, HTML, CSS e JavaScript, mas com foco principal no backend. Busco constantemente evoluir, adquirindo novos conhecimentos e aprimorando minhas habilidades para me destacar na área.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#formacao'"
+        />
+    </section>
+    <section id="formacao">
+        <p class="section__text__p1">Minha </p>
+        <h1 class="title">Formação</h1>
+        <div class="experience-details-container">
+            <div class="details-container"> 
+                <img 
+                        src="./assets/checkmark.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                <h2 class="experience-sub-title"> Bacharelado em Engenharia de Software</h2>
+                <div class="article-container"> 
+                    <article>
+                        <div>
+                            <h3>Uninter</h3>
+                            <p>Em andamento...</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+         <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#portifolio'"
+        />
+    </section>
+    <section id="portifolio">
+  <p class="section__text__p1">Mais recentes</p>
+  <h1 class="title">Projetos</h1>
+
+  <div class="experience-details-container"> 
+    <div class="about-containers">
+
+      <!-- Project One -->
+      <div class="details-container color-container"> 
+        <div class="article-container">
+          <img 
+            src="./assets/project-1.png" 
+            alt="project-1" 
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Projeto 1</h2>
+        <div class="btn-container">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/bryansiim/melhoria-player-faculdade'">
+            GitHub
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Two -->
+      <div class="details-container color-container"> 
+        <div class="article-container">
+          <img 
+            src="./assets/project-2.png" 
+            alt="project-2" 
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Projeto 2</h2>
+        <div class="btn-container">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/bryansiim/SnakeGame'">
+            GitHub
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Three -->
+      <div class="details-container color-container"> 
+        <div class="article-container">
+          <img 
+            src="./assets/project-3.png" 
+            alt="project-3" 
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Projeto 3</h2>
+        <div class="btn-container">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/bryansiim/portfolio-website'">
+            GitHub
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contato'"
+  />
+</section>
+
+    </section>
+    <section id="contato"> 
+        <p class="section__text__p1">Entre em</p> 
+            <h1 class="title">Contato </h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                        <img 
+                        src="./assets/email.png" 
+                        alt="Email icon"
+                        class="icon contact-icon "
+                        />
+                        <p><a href="mailto:bryanfreitasmg@gmail.com">bryanfreitasmg@gmail.com</a>
+                        </p>
+                </div>
+                <div class="contact-info-container">
+                        <img 
+                        src="./assets/linkedin.png" 
+                        alt="Linkedin icon"
+                        class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com/in/bryansiim/">LinkedIn</a>
+                        </p>
+                </div>
+        </p>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                 <ul class="nav-links">
+                <li> <a href="#sobremim">Sobre mim</a></li>
+                <li> <a href="#formacao">Formação</a></li>
+                <li> <a href="#portifolio">Portifólio</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Feito por Bryan José. 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
